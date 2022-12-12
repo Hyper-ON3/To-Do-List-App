@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomToolBar" customModule="To_Do_List" customModuleProvider="target">
+            <connections>
+                <outlet property="calendarButton" destination="ua2-cT-yOf" id="loy-FR-Zek"/>
+                <outlet property="centralButton" destination="HVQ-Le-xnV" id="6G1-WZ-1Qb"/>
+                <outlet property="menuButton" destination="OKr-Sw-MqE" id="Ilv-U3-drN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-25" translatesAutoresizingMaskIntoConstraints="NO" id="XMn-oZ-ntP" userLabel="Buttons Stack">
+                    <rect key="frame" x="50" y="-13" width="314" height="79"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVQ-Le-xnV" userLabel="CentralButton">
+                            <rect key="frame" x="127" y="0.0" width="60" height="60"/>
+                            <color key="backgroundColor" red="0.52941179279999995" green="0.5411764979" blue="0.93333339689999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="Ke6-sC-JMj"/>
+                                <constraint firstAttribute="width" constant="60" id="zyd-jd-epN"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="plusAdd" title=""/>
+                            <connections>
+                                <action selector="toolBarButtonsPressed:" destination="-1" eventType="touchUpInside" id="pJh-cp-esd"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="254" translatesAutoresizingMaskIntoConstraints="NO" id="Lnu-If-uPS" userLabel="Left Right buttons">
+                            <rect key="frame" x="0.0" y="35" width="314" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKr-Sw-MqE" userLabel="MenuButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="44"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="list30x30"/>
+                                    <connections>
+                                        <action selector="toolBarButtonsPressed:" destination="-1" eventType="touchUpInside" id="n3l-OM-0Tc"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua2-cT-yOf" userLabel="CalendarButton">
+                                    <rect key="frame" x="284" y="0.0" width="30" height="44"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="calendar30x30"/>
+                                    <connections>
+                                        <action selector="toolBarButtonsPressed:" destination="-1" eventType="touchUpInside" id="AMS-M5-pUJ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ua2-cT-yOf" secondAttribute="trailing" id="79c-lg-Bhn"/>
+                                <constraint firstAttribute="bottom" secondItem="ua2-cT-yOf" secondAttribute="bottom" id="7Zc-MO-V3e"/>
+                                <constraint firstItem="OKr-Sw-MqE" firstAttribute="top" secondItem="Lnu-If-uPS" secondAttribute="top" id="bzm-gD-Mz7"/>
+                                <constraint firstItem="ua2-cT-yOf" firstAttribute="top" secondItem="Lnu-If-uPS" secondAttribute="top" id="dBk-vO-BMx"/>
+                                <constraint firstItem="OKr-Sw-MqE" firstAttribute="leading" secondItem="Lnu-If-uPS" secondAttribute="leading" id="qX9-J5-Tfv"/>
+                                <constraint firstAttribute="bottom" secondItem="OKr-Sw-MqE" secondAttribute="bottom" id="rbe-v3-TW5"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Lnu-If-uPS" secondAttribute="bottom" id="8jE-kH-6gD"/>
+                        <constraint firstAttribute="trailing" secondItem="Lnu-If-uPS" secondAttribute="trailing" id="b27-up-dXi"/>
+                        <constraint firstItem="Lnu-If-uPS" firstAttribute="leading" secondItem="XMn-oZ-ntP" secondAttribute="leading" id="pRH-Kw-sRr"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XMn-oZ-ntP" secondAttribute="trailing" constant="50" id="CLV-1e-B1d"/>
+                <constraint firstItem="XMn-oZ-ntP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="f4V-3S-kfV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XMn-oZ-ntP" secondAttribute="bottom" id="jTE-7Z-rFG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="71.755725190839698" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="calendar30x30" width="30" height="30"/>
+        <image name="list30x30" width="30" height="30"/>
+        <image name="plusAdd" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

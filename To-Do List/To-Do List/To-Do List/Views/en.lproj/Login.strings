@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; configuration.title = "Log in"; ObjectID = "59d-Ml-QRd"; */
+"59d-Ml-QRd.configuration.title" = "Log in";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "59d-Ml-QRd"; */
+"59d-Ml-QRd.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "EMAIL ADRESS"; ObjectID = "7Ov-8s-Tf7"; */
+"7Ov-8s-Tf7.text" = "EMAIL ADRESS";
+
+/* Class = "UILabel"; text = "Welcome back!"; ObjectID = "Owd-lH-qxR"; */
+"Owd-lH-qxR.text" = "Welcome back!";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "PF6-Ml-sOZ"; */
+"PF6-Ml-sOZ.configuration.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "PF6-Ml-sOZ"; */
+"PF6-Ml-sOZ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "PASSWORD"; ObjectID = "aPo-PC-y0g"; */
+"aPo-PC-y0g.text" = "PASSWORD";
+
+/* Class = "UILabel"; text = "Don't have an account?"; ObjectID = "cxo-EF-RAU"; */
+"cxo-EF-RAU.text" = "Don't have an account?";
