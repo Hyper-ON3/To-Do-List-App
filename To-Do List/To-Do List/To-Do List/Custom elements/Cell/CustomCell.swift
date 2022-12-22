@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwipeCellKit
 
 class CustomCell: UITableViewCell {
     
@@ -27,6 +28,9 @@ class CustomCell: UITableViewCell {
     func configuringCellElements() {
         cellView.clipsToBounds = true
         cellView.layer.cornerRadius = 15
+        
+        taskLabel.lineBreakMode = .byWordWrapping
+        taskLabel.numberOfLines = 0
     }
     
 }

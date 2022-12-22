@@ -12,6 +12,7 @@
 		F42F9CCC2945F1C2005006CD /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42F9CCA2945F1C2005006CD /* CustomCell.xib */; };
 		F48DF72D294606D600828047 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DF72C294606D600828047 /* CustomTextField.swift */; };
 		F48DF72F294606E000828047 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48DF72E294606E000828047 /* CustomTextField.xib */; };
+		F4B4C615294767E9001C3594 /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4C614294767E9001C3594 /* TasksModel.swift */; };
 		F4B4EB8B29432A0500549156 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4EB8A29432A0500549156 /* AppDelegate.swift */; };
 		F4B4EB8D29432A0500549156 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4EB8C29432A0500549156 /* SceneDelegate.swift */; };
 		F4B4EB8F29432A0500549156 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B4EB8E29432A0500549156 /* LoginViewController.swift */; };
@@ -36,6 +37,7 @@
 		F42F9CCA2945F1C2005006CD /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		F48DF72C294606D600828047 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		F48DF72E294606E000828047 /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
+		F4B4C614294767E9001C3594 /* TasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
 		F4B4EB8729432A0500549156 /* To-Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B4EB8A29432A0500549156 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B4EB8C29432A0500549156 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,13 +78,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F47A13EF29438AB90001FDE0 /* CustomCell */ = {
+		F47A13EF29438AB90001FDE0 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				F42F9CCA2945F1C2005006CD /* CustomCell.xib */,
 				F42F9CC92945F1C2005006CD /* CustomCell.swift */,
 			);
-			path = CustomCell;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F48DF72B294606AA00828047 /* TextField */ = {
@@ -92,6 +94,14 @@
 				F48DF72C294606D600828047 /* CustomTextField.swift */,
 			);
 			path = TextField;
+			sourceTree = "<group>";
+		};
+		F4B4C613294767D5001C3594 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4B4C614294767E9001C3594 /* TasksModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F4B4EB7E29432A0500549156 = {
@@ -117,6 +127,7 @@
 			children = (
 				F4B4EB9E29432CB000549156 /* Animations */,
 				F4B4EBA6294346D100549156 /* Custom elements */,
+				F4B4C613294767D5001C3594 /* Models */,
 				F4B4EBA22943453500549156 /* Controllers */,
 				F4B4EBA12943452F00549156 /* Views */,
 				F4B4EBA32943454E00549156 /* Supporting files */,
@@ -167,30 +178,30 @@
 			children = (
 				F4B4EBB029435FB300549156 /* DesignableTextField.swift */,
 				F4B4EBAC2943477300549156 /* BaseUIViewComponents.swift */,
-				F47A13EF29438AB90001FDE0 /* CustomCell */,
-				F4B4EBA72943470F00549156 /* CustomTabBar */,
-				F4B4EBB529436FE900549156 /* CustomToolBar */,
+				F47A13EF29438AB90001FDE0 /* Cell */,
+				F4B4EBA72943470F00549156 /* TabBar */,
+				F4B4EBB529436FE900549156 /* ToolBar */,
 				F48DF72B294606AA00828047 /* TextField */,
 			);
 			path = "Custom elements";
 			sourceTree = "<group>";
 		};
-		F4B4EBA72943470F00549156 /* CustomTabBar */ = {
+		F4B4EBA72943470F00549156 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				F4B4EBA82943472200549156 /* CustomTabBar.xib */,
 				F4B4EBAA2943474300549156 /* CustomTabBar.swift */,
 			);
-			path = CustomTabBar;
+			path = TabBar;
 			sourceTree = "<group>";
 		};
-		F4B4EBB529436FE900549156 /* CustomToolBar */ = {
+		F4B4EBB529436FE900549156 /* ToolBar */ = {
 			isa = PBXGroup;
 			children = (
 				F4B4EBB62943703600549156 /* CustomToolBar.xib */,
 				F4B4EBB82943705000549156 /* CustomToolBar.swift */,
 			);
-			path = CustomToolBar;
+			path = ToolBar;
 			sourceTree = "<group>";
 		};
 		F7C8FAD9B995D1CBC53F8A3E /* Pods */ = {
@@ -333,6 +344,7 @@
 				F4B4EB8D29432A0500549156 /* SceneDelegate.swift in Sources */,
 				F4B4EBB129435FB300549156 /* DesignableTextField.swift in Sources */,
 				F4B4EBAF2943553400549156 /* TasksViewController.swift in Sources */,
+				F4B4C615294767E9001C3594 /* TasksModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

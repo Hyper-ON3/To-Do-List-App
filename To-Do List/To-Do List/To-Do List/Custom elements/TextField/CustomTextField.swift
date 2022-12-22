@@ -7,12 +7,18 @@
 
 import UIKit
 
+protocol CustomTextFieldDelegate {
+    func createTaskButtonTapped(_ task: String?)
+}
+
 class CustomTextField: BaseUIViewComponent {
     
     @IBOutlet weak var textFieldView: UIView!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var button: UIButton!
     @IBOutlet var mainView: UIView!
+    
+    var delegate: CustomTextFieldDelegate?
     
     func configuringCustomTFElements() {
         button.clipsToBounds = true
@@ -23,4 +29,10 @@ class CustomTextField: BaseUIViewComponent {
 
     }
     
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        
+        if textField.text != "" {
+            delegate?.createTaskButtonTapped(textField.text)
+        }
+    }
 }

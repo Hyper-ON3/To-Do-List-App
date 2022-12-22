@@ -35,7 +35,7 @@ class CustomToolBar: BaseUIViewComponent {
     
     
     @IBAction func toolBarButtonsPressed(_ sender: UIButton) {
-        //delegate?.toolBarButtonsPressed(sender.tag)
+      
         switch sender.tag {
         case 0:
             delegate?.toolBarButtonsPressed(0)
